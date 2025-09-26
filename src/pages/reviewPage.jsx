@@ -155,10 +155,6 @@ const ReviewPage = () => {
     a.remove();
   };
 
-  const downloadOriginal = (dataUrl, idx) => {
-    triggerDownload(dataUrl, `photo-original-${idx + 1}.png`);
-  };
-
   const downloadFramed = async (dataUrl, idx) => {
     try {
       const framed = await composeFramedDataUrl(dataUrl);
